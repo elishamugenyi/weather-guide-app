@@ -1,0 +1,127 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Verdana, sans-serif, Arial, Tahoma, sans-serif;
+    font-size: large;
+  }
+  
+  .background {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: rgba(255,255,255,0.9);
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: #2C5F2D;
+    border-radius: 10px;
+    border: solid #2C5F2D;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px;
+    border-radius: 12px;
+    width: 70px;
+    background-color: #2C5F2D;
+    color: #f0f0f0;
+  }
+
+  button:hover {
+    background: #F2AA4CFF;
+    color: black;
+  }
+  
+  #search-btn {
+    padding: 6px;
+    margin: 10px, 10px;
+    border-radius: 12px;
+  }
+
+  #search-btn:hover {
+    background-color: black;
+    color: white;
+  }
+  .search-area {
+    margin-bottom: 20px;
+    border: #F2AA4CFF;
+    border-radius: 12px;
+    background-color: #F2AA4CFF;
+  }
+  
+  #forecast {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #forecast div {
+    width: 150px;
+    padding: 10px;
+    background-color: #2C5F2D;
+    color: #f0f0f0;
+    border-radius: 5px;
+    border: solid #89ABE3FF;
+  }
+
+/*css for the 3 day forecast div created in Javascript*/
+#forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.forecast-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 150px;
+}
+.forecast-card img {
+  width: 50px;
+  height: 50px;
+}
+figure {
+  width: calc(33.333% - 20px);/*30%;*/
+  margin: 10px;/*1%;*/
+  text-align: center;
+}
+.lazy {
+  display: block;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-right: 120px;
+  background-color: #2C5F2D;
+  color: white;
+  width: 100%;
+    
+}
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+.footer-middle a {
+    flex: 1;
+    text-align: center;
+    color: white;
+
+}
+.footer-right {
+    flex: 1;
+    text-align: right;
+}

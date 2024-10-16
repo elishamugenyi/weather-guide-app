@@ -1,0 +1,4 @@
+.env
+dist
+node_modules
+solution_to_errors.txt

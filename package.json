@@ -1,0 +1,25 @@
+{
+    "name": "weather-app",
+    "version": "1.0.0",
+    "description": "Weather application to fetch weather information based on latitude and longitude",
+    "main": "main.js",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build --emptyOutDir",
+        "lint": "eslint *.js src/**/*.js",
+        "start": "vite"
+    },
+    "dependencies": {
+        "axios": "^1.4.0",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "moment": "^2.30.1"
+    },
+    "devDependencies": {
+        "eslint": "^8.48.0",
+        "eslint-plugin-import": "^2.31.0",
+        "vite": "^4.0.0"
+    },
+    "author": "",
+    "license": "ISC"
+}
