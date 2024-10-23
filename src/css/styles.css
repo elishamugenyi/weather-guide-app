@@ -23,6 +23,8 @@ body, html {
     border-radius: 10px;
     border: solid #2C5F2D;
     text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
   }
   
   nav {
@@ -37,6 +39,7 @@ body, html {
     width: 70px;
     background-color: #2C5F2D;
     color: #f0f0f0;
+    cursor: pointer;
   }
 
   button:hover {
@@ -64,6 +67,8 @@ body, html {
   #forecast {
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
   }
   
   #forecast div {
@@ -76,17 +81,13 @@ body, html {
   }
 
 /*css for the 3 day forecast div created in Javascript*/
-#forecast {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
 .forecast-card {
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
   text-align: center;
   width: 150px;
+  height: fit-content;
 }
 .forecast-card img {
   width: 50px;
@@ -99,6 +100,40 @@ figure {
 }
 .lazy {
   display: block;
+}
+
+/*Mobile Responsiveness*/
+@media only screen and (mad-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+    font-size: medium;
+  }
+
+  nav button {
+    width: 100px;
+  }
+  #forecast-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .forecast-card {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+}
+
+/*Extra wide screens*/
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 70%;
+  }
+  nav button {
+    width: 120px;
+  }
+  .forecast-card {
+    width: 200px;
+  }
 }
 
 footer {
@@ -124,4 +159,66 @@ footer {
 .footer-right {
     flex: 1;
     text-align: right;
+}
+
+/* Modal styles */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; 
+  border-radius: 10px;
+}
+.modal-content h2 {
+  margin-left: 30%;
+}
+
+/*css for the form inside the contact modal*/
+#contact-form {
+  border-radius: 8px;
+  box-shadow: #2C5F2D;
+  box-sizing: border-box;
+  background-color: #ccc;
+  max-width: 60%;
+  margin-left: 10%;
+}
+#contact-form label {
+  display: block;
+  margin: 2px;
+  color: solid black;
+}
+#contact-form input, textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  
+}
+#contact-form button {
+  width: 150px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
