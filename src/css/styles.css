@@ -63,7 +63,11 @@ body, html {
     border-radius: 12px;
     background-color: #F2AA4CFF;
   }
-  
+  #weather-data {
+    width: fit-content;
+    height: 50px;
+    margin-left: 190px;
+  }
   #forecast {
     display: flex;
     justify-content: space-around;
@@ -87,11 +91,12 @@ body, html {
   border-radius: 5px;
   text-align: center;
   width: 150px;
-  height: fit-content;
+  height: 250px;
 }
 .forecast-card img {
   width: 50px;
-  height: 50px;
+  height: 40px;
+  background-color: #2C5F2D;
 }
 figure {
   width: calc(33.333% - 20px);/*30%;*/

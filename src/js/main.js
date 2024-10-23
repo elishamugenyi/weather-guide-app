@@ -84,8 +84,8 @@ function displayCurrentWeather(data) {
     weatherIcon.setAttribute("src", iconsrc);
     weatherIcon.setAttribute("alt", desc);
     weatherIcon.setAttribute("loading", "lazy");
-    weatherIcon.setAttribute("width","60");
-    weatherIcon.setAttribute("height","70");
+    weatherIcon.setAttribute("width","40");
+    weatherIcon.setAttribute("height","25");
     //captionDesc.textContent = `${desc}`;
 
     section.appendChild(currentTemp);
